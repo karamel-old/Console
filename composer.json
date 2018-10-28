@@ -1,0 +1,19 @@
+{
+  "name": "karamel/console",
+  "description": "Console",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Amir Kalantar",
+      "email": "amir.kalantar@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Karamel\\Console\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {}
+}

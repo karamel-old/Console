@@ -1,0 +1,16 @@
+<?php
+require_once __DIR__ . '/src/Helpers/Helpers.php';
+spl_autoload_register(function ($class) {
+    $class = str_replace("Karamel\\Console\\", "", $class);
+    $class = str_replace("\\", "/", $class);
+    require_once __DIR__ . '/src/' . $class . '.php';
+});
+
+define('APP_PATH', 'app/');
+define('CONTROLLER_NAMESPACE', 'App/Http/Controllers/');
+
+\Karamel\Console\Commands\Boot::start();
+
+
+\Karamel\Console\Facade\Console::run($argv[1]);
+//$console->run("make:controller");
