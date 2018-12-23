@@ -25,7 +25,7 @@ class Console
 
     public function run($name)
     {
-        if(!isset($this->commands[$name]))
+        if (!isset($this->commands[$name]))
             throw new \Exception("Command not defined");
         return $this->commands[$name]['callback']();
     }

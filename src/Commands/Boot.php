@@ -1,8 +1,11 @@
 <?php
+
 namespace Karamel\Console\Commands;
+
 use Karamel\Console\Facade\Console;
 
-class Boot{
+class Boot
+{
     public static function start()
     {
         Console::add('serve', 'Serve Server', '\Karamel\Console\Commands\Serve::define');

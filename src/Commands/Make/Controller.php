@@ -15,7 +15,9 @@ class Controller implements ICommand
 
 namespace ###NAMESPACE###;
 
-class ###CLASSNAME###
+use Karamel\Http\Controller;
+
+class ###CLASSNAME### extends Controller
 {
     
 }";
